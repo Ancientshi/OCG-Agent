@@ -1,0 +1,39 @@
+### Task Description  
+I will provide you with an [Article], and an Abstract Data Type [ADT]. Your task is to extract relevant entities from the [Article] based on the given [ADT].
+
+
+### Abstract Data Type (ADT)
+{{ADT}}
+
+### Article
+{{article}}
+
+
+### Important Instructions
+(1) The primary objective is to extract instance object, the Abstract Data Type [ADT] is already defined and you should strictly follow. 
+(2) You should pay special attenstion to these key information and relevant attribute in [Article].
+(3) Do not fabricate information—if an extracted instance object has incomplete attributes, keep them as NOT FOUND.
+(4) For the attribute 'AdditionalInformation', it should be a JSON format containing supplementary descriptive details about the candidate. Or be an empty json.
+
+### Your Answer Should Follow These Steps
+(1) Read the [ADT] carefully and understand the defined data structure and the data type for each attribute.
+(2) Read the [Article] then specific your founded instance object, list the Name attribute. 
+(3) Write a section named 'Candidate List', followed by a json format answer.
+
+### Output Format
+You can articulate your thought process step by step in free text. However, at the end, you must generate a section titled 'Candidate List'. This section must be enclosed within triple backticks (```json) and (```). The 'Candidate List' should be formatted as JSON using the following structure:
+```json
+[
+    {
+        "Name": "{content}",
+        "Attribute1": "{content}",
+        "Attribute2": "{content}",
+        ...,
+        "AdditionalInformation" : {
+            "xxx" : "xxx",
+            ...
+        }
+    },
+    ...
+]
+```

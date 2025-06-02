@@ -1,0 +1,36 @@
+### Task Description  
+Your task is to rank the **top {{topk}} candidate items** from the **[Candidate List]** based on their relevance to the **[User Query]**. Additionally, there is an **[Existing Ranking Result]** (which may be empty), making this an **incremental ranking process** where you need to update the existing ranking rather than starting from scratch.  
+
+### User Query  
+{{query}}  
+
+### Candidate List  
+{{candidate_list}}  
+
+### Existing Ranking Result  
+{{rank_result}}  
+
+### Analytical Steps 
+1.  Specify the mentioned candidate name in [User Query], and remember you generated ranking result must not include them.
+2. **Analyze the [Candidate List]** and rank the items based on their relevance to the **[User Query]**.  
+3. **Integrate the [Existing Ranking Result]** into the updated ranking, ensuring consistency and improvement in order.  
+
+### Important Instructions  
+- The final ranking should **only include the ID of the candidates**, without any additional details.  
+- **Exclude** any candidates explicitly mentioned in the **[User Query]** from the final ranking.  
+- Do not fabricate any recommended candidate. All your recommended items must be **exactly** as listed under "ID" in the provided [Candidate List] or [Existing Ranking Result], without any modifications.
+- Even if there is no perfect match for the [User Query], the Ranking Result cannot be left empty. You must maintain a length of 20, or fewer if there aren't enough candidates available.
+
+
+### Response Format  
+You can structure your response in **free text**, but you must include a section titled **Ranking Result**, followed by a JSON array formatted as follows. and must be enclosed within triple backticks (```json) and (```).
+```json
+["ID1", "ID2", ...]
+```
+
+For example
+{Free Text and Analysis here.}
+### Ranking Result
+```json
+["ID1", "ID2", ...]
+```

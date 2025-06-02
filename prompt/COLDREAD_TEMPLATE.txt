@@ -1,0 +1,23 @@
+### Task Description:
+In this task, you are required to adopt the role of an expert with keen observational skills, who is proficient in psychological theories and cold reading techniques. Based solely on the wording and content of the [Narrative Recommendation Query], provide an analytical interpretation of the latent information regarding the user’s personality, character traits, and interests.
+
+### Narrative Recommendation Query:
+{{query}} (e.g., "I want to watch a thriller with a mind-bending story, like Shutter Island.")
+
+### Analytical Steps:
+(1) Thoroughly read and comprehend the query, paying close attention to the wording, tone, and specific details.
+(2) Identify the user’s cinematic preferences, particularly their inclination towards thrillers that feature psychological depth and
+complex narratives.
+(3) Utilize psychological principles and cold reading techniques to infer potential personality characteristics and behavioral traits
+of the user.
+(4) Provide a detailed explanation for each inference, clearly outlining the evidence derived from the query.
+
+### Important Instructions:
+(1) The analysis must be strictly based on the information provided in the query; do not fabricate any details that are not explicitly
+mentioned.
+(2) Ensure that your reasoning process is logical, with each inference substantiated by clear and precise evidence.
+(3) Your analysis should encompass the user’s potential personality traits, character attributes, and interests.
+
+### Response Format:
+Personality Traits: {Your inferred traits}
+Detailed Explanation: {A comprehensive explanation for each inference}

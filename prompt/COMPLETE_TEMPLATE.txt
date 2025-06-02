@@ -1,0 +1,38 @@
+### Task Description  
+Your task is to complete the existing [Instance Object] based on the provided Abstract Data Type [ADT] and [Article].  
+
+### Abstract Data Type (ADT)
+{{ADT}}
+
+### Article
+{{article}}
+
+### Instance Object
+{{candidate_item}}
+
+### Important Instructions
+(1) The primary objective is to complete existing [Instance Object] and do incremental information updation. The existing [Instance Object] has incomplete attributes value NOT FOUND. Your task is to fill these attributes if valuable information is provided in [Article], or you have high confidence of knowledge you can directly fill it. If attribute already has value you can also do incremental updation.
+(2) The Abstract Data Type [ADT] is already defined and you should strictly follow. 
+(3) Do not fabricate information.
+(4) For the attribute 'AdditionalInformation', it should be a JSON format containing supplementary descriptive details about the candidate. Or be an empty json.
+
+### Your Answer Should Follow These Steps
+(1) Read the [ADT] carefully and understand the defined data structure
+(2) Read the [Article] then specific your founded valuable information that can complete and do incremental updation to the existing [Instance Object]. 
+(3) Write a section named 'Completed Candidate', followed by a json format answer.
+
+
+### Output Format
+You can articulate your thought process step by step in free text. However, at the end, you must generate a section titled 'Completed Candidate'. This section must be enclosed within triple backticks (```json) and (```). The 'Completed Candidate' should be formatted as JSON aligning with [Instance Object], such as:
+```json
+{
+    "Name": "{content}",
+    "attribute1": "{content}",
+    "attribute2": "{content}",
+    ...,
+    "AdditionalInformation" : {
+        "xxx" : "xxx",
+        ...
+    }
+}
+```

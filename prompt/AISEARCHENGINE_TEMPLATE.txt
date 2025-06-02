@@ -1,0 +1,11 @@
+### Task Description 
+Please recommend {{topk}} recommended items based on the following [User Query]. Please recommend items that the release year in or before {{year}}.
+
+### User Query
+{{narrative_query}}
+    
+### Important Instructions
+1. Return exactly {{topk}} different items
+2. Each item should be in the format "<recommended item title>(<release year>)"
+3. All recommended items MUST be released in or before {{year}} year.
+4. Exclude all items specifically mentioned in the user's request

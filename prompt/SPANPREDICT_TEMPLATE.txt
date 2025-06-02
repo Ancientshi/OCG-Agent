@@ -1,0 +1,41 @@
+### Task Description:
+    Given a [Article] and its specified [ADT] (Abstract Data Type) that defines the attributes or properties of interest, your task is to reformat the given [Article], 
+    highlight relevant factual information in this given [Article] by wrapping key segments with XML tags. These tags should be inserted in a manner that 
+    preserves the original sentence structure and context.
+
+### Abstract Data Type (ADT)
+{{ADT}}
+
+### Article
+{{article}}
+
+
+### Analytical Steps:
+    (1) Contextual Identification 1. Begin by reading the entire text to grasp its overall topic or domain. 2. Map the ADT’s predefined attributes to any relevant segments in the text, noting potential matches for each attribute.
+    (2) Refinement and Disambiguation 1. Relevance Check: Does the segment directly correspond to one of the ADT’s attributes? 
+        2.Contextual Completeness: Does the segment make sense in context, or is it part of a larger phrase that should be tagged together? 
+        3. Potential Overlaps: Could it overlap with other attributes, and if so, how to resolve or merge them without duplicating tags?
+    (3) Tag Insertion 1. Insert XML tags at the most suitable positions, wrapping only the text fragments deemed relevant after
+    the refinement step. 2. Use simple yet descriptive tag names (e.g.,<date>...</date>, <location>...</location>, <person>...</person>, <data>...</data>, <relationship>...</relationships> etc.) based on your ADT specification. 
+    3. Maintain the order and structure of the text, ensuring no disruption of the original wording or sentence flow.
+    (4) Verification of Consistency 1. After inserting the tags, review the text to confirm that all inserted tags are paired correctly and
+    that the text remains grammatically and semantically coherent. 2. Ensure that each tagged segment precisely corresponds to an ADT attribute, with no extraneous or missing tags.
+
+### Important Instructions:
+    (1) You must tag the whole [Article] from the [article start] to the [article end]! From the beginning to the end, don't miss any part! 
+    (2) Depending on the ADT, attributes might include (but are not limited to) names, locations, dates, events, numerical values, causes, or results.
+    (3) The primary objective is to retain the text’s readability and meaning while accurately tagging the content that corresponds to each ADT attribute.
+    (4) Use attribute-based tags (e.g., <time>...</time>, <location>...</location>) according to the ADT structure. Avoid duplicate tagging or nested tagging of the same text fragment unless nested tagging is explicitly required by the ADT’s design.
+    (4) Do not modify, reorder, or remove any original words in the text. Only wrap the relevant text segments with the designated XML tags to ensure minimal disruption to readability.
+
+### Output Format:
+    You must output your thinking process step by step in free style text. Then you output the reformatted section named Reformatted Article. Retaining the original paragraph and sentence structure but provide the fully tagged text.
+
+### Example Demonstration:
+    Suppose the ADT includes attributes such as time, location, person, and artifact. The following sample text illustrates how to insert XML tags in practice.
+
+Original Article:
+    Yesterday, I traveled to Paris, visited the Louvre, and admired the Mona Lisa. There, I discussed Napoleon with a friend before heading to the Eiffel Tower.
+
+Tagged Article:
+    <time>Yesterday</time>, I traveled to <location>Paris</location>, visited the <location>Louvre</location>, and admired the <artifact>Mona Lisa</artifact>. There, I discussed <person>Napoleon</person> with a <person>friend</person> before heading to the <location>Eiffel Tower</location>.

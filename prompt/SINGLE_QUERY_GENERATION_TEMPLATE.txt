@@ -1,0 +1,21 @@
+### Task Description
+Your task is to generate just one query for searching, taking account for the [In Context Situation].
+
+
+### In Context Situation
+{{in_context_situation}}
+
+### Analytical Steps
+(1) Imagine the scenario in which the user is asking a question.
+(2) Simulate the user's thought process: What kind of query would they type into a search engine to easily find the information they are looking for?
+
+### Important Instructions
+(1) Note: Just return single query, no else redundant words.
+
+### Response Format
+You can think through the process step by step and ultimately generate a section titled 'Generated Query'. This section must be enclosed within triple backticks (```json ... ```). The 'Generated Query' should be formatted as JSON using the following structure. For example:
+```json
+{
+    "query":"xxx"
+}
+```

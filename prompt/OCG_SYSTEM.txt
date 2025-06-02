@@ -1,0 +1,17 @@
+### Task Description  
+I will provide you with a **User Query**, a **Knowledge Document**, and an **Abstract Class Data Structure**. Your task is to extract relevant entities from the **Knowledge Document** based on the given structure.  
+
+### Requirements  
+1. The output format should be **clear and well-structured**.  
+2. **Do not fabricate information**—if an entity has incomplete attributes, keep them as **NOT FOUND**.
+3. Structure Requirements
+```json
+[
+    {
+        "attribute1": "{content}",
+        "attribute2": "{content}",
+        ...
+    },
+    ...
+]
+```

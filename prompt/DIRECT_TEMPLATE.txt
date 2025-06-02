@@ -1,0 +1,18 @@
+### Task Description 
+Please recommend {{topk}} recommended items based on the following user [request]:
+
+### Request
+{{narrative_query}}
+    
+### Important Instructions
+1. Return exactly {{topk}} different items
+2. Each item should be in the format "<recommended item title>(<release year>)"
+3. Carefully analyze the user request for any mentions of years (e.g., 2005, 1998, etc.)
+4. If years are mentioned, extract ALL years from the query and identify the MAXIMUM year
+5. All recommended items MUST be released in or before this maximum year. Example: If query mentions movies from 1994 and 2005, ONLY recommend movies earlier 2005.
+6. Exclude all recommended items specifically mentioned in the user's request
+7. Return only a JSON object with key "ranked_result" and a list of items as value
+    
+### Output Format
+Your response MUST be a valid JSON object with no other text or explanation.
+{"ranked_result": ["Item 1(Year)", "Item 2(Year)", ..., "Item {{topk}}(Year)"]}

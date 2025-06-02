@@ -1,0 +1,18 @@
+### Task Description 
+Your task is to extract the recommended items from [Article]. You should take account the user's [Narrative Query], to yield a ranked list.
+
+### Narrative Query
+{{query}}
+
+### Article
+{{article}}
+    
+### Important Instructions
+1. Each item should be in the format "<recommended item title>(<release year>)"
+2. Just extract the mentioned items based on the [Article] content without any fabrication.
+3. Ensure all recommended items are all extracted.
+4. According to user's preferencee yield a ranked list.
+
+### Output Format
+Your response MUST be a valid JSON object with no other text or explanation.
+{"ranked_result": ["Item 1(Year)", "Item 2(Year)", ..., "Item {{topk}}(Year)"]}

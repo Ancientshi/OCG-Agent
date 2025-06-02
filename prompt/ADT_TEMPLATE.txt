@@ -1,0 +1,169 @@
+### Task Description  
+Your task is to understand user’s [Narrative Query]. Then specify what type of recommendations they user need. Then design appropriate Abstract Data Type (ADT) for the candidate item. ADT inclues the ClassName and Attributes. Some attributes are `required` and others are `optional`. The attributes should be dynamically adjusted according to the user’s concerns, and the key information that the user cares about must be `required`.
+
+### Narrative Query
+{{query}}
+
+
+### Analytical Steps
+(1) Integrate the insights gained from the query to identify the core attributes that the candidate item should possess.
+(2) For each identified attribute, furnish a detailed rationale that elucidates how the attribute aligns with the user’s requirements while ensuring adaptability for dynamic adjustments.
+
+### Important Instructions
+(1) All analyses must be strictly derived from the narrative query; no extraneous information should be incorporated.
+(2) Each inference and attribute selection must be supported by clear, logical evidence, ensuring the overall reasoning is both coherent and robust.
+(3) The design of the Abstract Data Type (ADT) should be responsive to the user’s specific concerns, balancing the necessity of key attributes with the flexibility to accommodate optional requirements. The attribute "Name" and "AdditionalInformation" must should be included and they are mandatory. The "AdditionalInformation" serves as a repository for supplementary descriptive details about the candidate that are not of primary importance. The attribute 'AdditionalInformation' should be JSON format.
+(4) For movie recommendation, the attribute ReleaseYear is required.
+
+### Response Format
+Class Name: {classname}
+Attributes:
+Name, Required
+{attribute1}, {Required/Optional}
+{attribute2}, {Required/Optional}
+...
+AdditionalInformation, Required
+
+### Additional Notes
+1. If asking for studying aboard programe recommendation, Name need to be {programe name} at {university name}. Please add this note to the ADT to instruct the format of the Name attribute. Please using the full name of university instead of abbreviation.
+
+### Example
+Below are examples, you should adjust according to context.
+
+#### Example 1
+Narrative Query: 
+I am a Chinese student with a Bachelor's degree in CS from BUPT, GPA of
+3.3/4, IELTS score of 6. I’m interested in applying for Master's programs
+related to CS major in Australia. Which universities and programes would I
+be suitable to apply to?
+
+ADT: 
+```json
+{
+  "ClassName": "UniversityPrograme",
+  "Attributes": [
+    {
+      "Name": "Name",
+      "Description": "Name of the Programe, use the format {programe name} at {university name}.",
+      "Type": "Required",
+      "Datatype": "String"
+    },
+    {
+      "Name": "UniversityName",
+      "Description": "Name of the University providing the Programe, use the full name instead of abbreviation.",
+      "Type": "Required",
+      "Datatype": "String"
+    },
+    {
+      "Name": "GPARequirement",
+      "Description": "Minimum GPA required for admission",
+      "Type": "Required",
+      "Datatype": "String"
+    },
+    {
+      "Name": "EnglishRequirement",
+      "Description": "Minimum English proficiency requirement (e.g., IELTS, TOEFL)",
+      "Type": "Required",
+      "Datatype": "String"
+    },
+    {
+      "Name": "Programme Duration",
+      "Description": "Length of the university programme",
+      "Type": "Optional",
+      "Datatype": "String"
+    },
+    {
+      "Name": "UniversityRanking",
+      "Description": "Overall university ranking",
+      "Type": "Optional",
+      "Datatype": "String"
+    },
+    {
+      "Name": "MajorRanking",
+      "Description": "Ranking of the specific major or programme",
+      "Type": "Optional",
+      "Datatype": "String"
+    },
+    {
+      "Name": "Location",
+      "Description": "Geographic location of the university",
+      "Type": "Required",
+      "Datatype": "String"
+    },
+    {
+      "Name": "AdditionalInformation",
+      "Description": "Any other important information related to the programme",
+      "Type": "Required",
+      "Datatype": "Object"
+    }
+  ]
+}
+```
+
+
+#### Example 1
+Narrative Query: 
+I want some recommendations of movies. One of my favorite movies is Brick (2005). I enjoy the modern, noir style.
+
+ADT: 
+```json
+{
+  "ClassName": "Movie",
+  "Attributes": [
+    {
+      "Name": "Name",
+      "Description": "Identifies the movie being recommended; serves as the primary reference point for the user.",
+      "Type": "Required",
+      "Datatype": "String"
+    },
+    {
+      "Name": "Genre",
+      "Description": "Describes the category or categories of the movie; useful for filtering based on user preferences like modern noir or dark themes. For example, Thriller, Sci-Fi, Noir, Psychological Horror",
+      "Type": "Required",
+      "Datatype": "String"
+    },
+    {
+      "Name": "ReleaseYear",
+      "Description": "Indicates the year the movie was released; can help users choose based on preferred eras or styles.",
+      "Type": "Required",
+      "Datatype": "String"
+    },
+    {
+      "Name": "Director",
+      "Description": "Names the director of the movie, which may offer insight into the film’s style and complexity.",
+      "Type": "Optional",
+      "Datatype": "String"
+    },
+    {
+      "Name": "PlotSummary",
+      "Description": "Provides a brief overview of the movie’s storyline; helps users understand the theme and tone.",
+      "Type": "Optional",
+      "Datatype": "String"
+    },
+    {
+      "Name": "Themes",
+      "Description": "Describes the underlying themes explored in the movie, such as existentialism, memory, or isolation. Such as Existentialism, Identity, Isolation, Morality and so on.",
+      "Type": "Required",
+      "Datatype": "String"
+    },
+    {
+      "Name": "ComplexityLevel",
+      "Description": "Indicates the narrative or structural complexity of the film; aligns with the user’s preference for intellectually challenging content.",
+      "Type": "Optional",
+      "Datatype": "String"
+    },
+    {
+      "Name": "IntellectualEngagement",
+      "Description": "Measures how much cognitive effort the movie requires from the viewer; reflects the depth of plot and themes.",
+      "Type": "Optional",
+      "Datatype": "String"
+    },
+    {
+      "Name": "AdditionalInformation",
+      "Description": "Any other relevant details about the movie that may enrich the recommendation (e.g., awards, critical acclaim, trivia).",
+      "Type": "Required",
+      "Datatype": "Object"
+    }
+  ]
+}
+```

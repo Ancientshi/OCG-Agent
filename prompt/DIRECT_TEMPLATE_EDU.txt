@@ -1,0 +1,16 @@
+### Task Description 
+Please recommend {{topk}} recommended items based on the following user [request]. Recommendation should specify which programe at which university. (e.g., {programe name} at {full university name})
+
+
+### Request
+{{narrative_query}}
+    
+### Important Instructions
+1. Return exactly {{topk}} different items
+2. Exclude all recommendations specifically mentioned in the user's request
+3. Return only a JSON object with key "ranked_result" and a list of items as value
+4. Every recommendations MUST be different, no duplication.
+    
+### Output Format
+Your response MUST be a valid JSON object with no other text or explanation.
+{"ranked_result": [""Recommendation 1"", "Recommendation 2", ..., "Recommendation {{topk}}"]}

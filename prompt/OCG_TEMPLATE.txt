@@ -1,0 +1,14 @@
+### 用户问题
+```txt
+{{user_question}}
+```
+
+### 知识点文档
+```txt
+{{external_knowledge_str}}
+```
+
+### 抽象类数据结构
+```txt
+{{ADT}}
+```

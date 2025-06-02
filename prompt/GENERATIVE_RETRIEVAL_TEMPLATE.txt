@@ -1,0 +1,24 @@
+### Task Description 
+Please recommend {{topk}} recommended items based on the following user [request] in the format of predefined [Abstract Data Type (ADT)]. You can only recommend movies releaseed in or before {{year}}.
+
+### Abstract Data Type (ADT)
+```json
+{{adt}}
+```
+
+### Request
+{{narrative_query}}
+    
+### Important Instructions
+1. Return exactly {{topk}} different items
+2. Each item should be in the format of ADT
+3. All recommended movies MUST be released in or before {{year}}.
+4. Exclude all recommended items specifically mentioned in the user's request
+5. Return only a JSON object with key "ranked_result" and a list of objects.
+6. If some attribute value you can not make sure with high confidence, leave it as NOT FOUND.
+    
+### Output Format
+Your response MUST be a valid JSON object with no other text or explanation, following ADT.
+```json
+fill your content here
+```

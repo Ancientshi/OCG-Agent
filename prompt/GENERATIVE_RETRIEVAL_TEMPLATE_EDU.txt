@@ -1,0 +1,20 @@
+### Task Description 
+Please recommend {{topk}} recommended items based on the following user [request] in the format of predefined [Abstract Data Type (ADT)].
+
+### Abstract Data Type (ADT)
+{{adt}}
+
+### Request
+{{narrative_query}}
+    
+### Important Instructions
+1. Return exactly {{topk}} different items
+2. Each item should be in the format of ADT
+3. Return only a JSON object with key "ranked_result" and a list of objects.
+4. If some attribute value you can not make sure with high confidence, leave it as NOT FOUND.
+
+### Output Format
+Your response MUST be a valid JSON object with no other text or explanation, following ADT.
+```json
+fill your content here
+```

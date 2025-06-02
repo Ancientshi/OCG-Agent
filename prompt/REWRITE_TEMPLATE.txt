@@ -1,0 +1,18 @@
+### Task Description  
+Your task is to comprehend the user's [Narrative Recommendation Query], and the analysis of user's [Personality Traits], for generating a series of sub-questions or keywords that can be used as queries to search on internet for relevant information.
+
+### Narrative Recommendation Query  
+{{query}}
+
+### Personality Traits
+{{profile}}
+
+### Important Instructions  
+1. Each sub-question should focus on a distinct aspect to ensure they are not redundant or overlapping. If there is limited information to search for, you may generate just one sub-question.  
+
+### Response Format  
+The response should consist of a series of sub-questions or keywords, separated by line breaks. Do not enclose them in ``` symbols. For example:  
+
+subquestion1  
+subquestion2  
+...

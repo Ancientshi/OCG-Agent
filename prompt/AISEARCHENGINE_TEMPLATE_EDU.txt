@@ -1,0 +1,10 @@
+### Task Description 
+Please recommend {{topk}} recommendations based on the following [User Query]. Recommendation should specify which programe at which university. (e.g., {programe name} at {full university name})
+
+### User Query
+{{narrative_query}}
+    
+### Important Instructions
+1. Return exactly {{topk}} different recommendations.
+2. Exclude all recommendations specifically mentioned in the user's request
+3. Every recommendations MUST be different, no duplication.
