@@ -50,7 +50,7 @@ We choose RankGPT as the ranking method, and OCG-RankGPT is our main implementat
 
 *Deep Research:* Perplexity and Open Deep Research.
 
-## Results 📊 （手打的表格和图片哪个好？你选一个另一个我就删了）
+## Results 📊
 
 | Method                   | Movie<br>Precision\@10                                                                                         | Movie<br>Recall\@10 | Movie<br>NDCG\@10 | Education<br>Precision\@5 | Education<br>Recall\@5 | Education<br>NDCG\@5 |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------- | ------------------------- | ---------------------- | -------------------- |
@@ -98,7 +98,7 @@ We choose RankGPT as the ranking method, and OCG-RankGPT is our main implementat
     └─── .git/                  # Git version control file
 
 
-## Getting Started 🚀 （源自readme原来的内容。你检查一下）
+## Getting Started 🚀 
 
 ### 1. Clone the repository:
 
